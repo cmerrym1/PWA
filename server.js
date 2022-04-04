@@ -4,10 +4,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 const PORT = process.env.PORT || 3001;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/progressive-web-app', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://cmerrym1:pepsirockS1!@cluster0.w4990.mongodb.net/progressive-web-app?retryWrites=true&w=majority";
 
 const app = express();
 
@@ -20,8 +17,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(MONGODB_URI, {
+  useUnifiedTopology: true,
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true 
 });
 
 // routes

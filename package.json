@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cmerrym1/Social-Media-API.git"
+    "url": "git+https://github.com/cmerrym1/PWA.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cmerrym1/Social-Media-API.git"
+    "url": "https://github.com/cmerrym1/PWA.git"
   },
-  "homepage": "https://github.com/cmerrym1/Social-Media-API.git#readme",
+  "homepage": "https://github.com/cmerrym1/PWA.git.git#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
