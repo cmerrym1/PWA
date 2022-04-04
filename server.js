@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI || "process.env.MONGODB_URI || “mongodb:local host/pwa";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://cmerrym1:test123!@cluster0.w4990.mongodb.net/progressive-web-app?retryWrites=true&w=majority";
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI || 'mongodb://localhost:3001/progressive-web-app', {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
